@@ -24,3 +24,4 @@ _bower_components
 
 # Build dest directories
 stylesheets
+_site
