@@ -13,6 +13,24 @@ module.exports = function(grunt) {
       }
     },
 
+    coffee: {
+      dist: {
+        options: {},
+        src: '_scripts/*.coffee',
+        dest: '_scripts/app.js'
+      }
+    },
+
+    concat: {
+      dist: {
+        options: {
+          separator: ';'
+        },
+        src: ['_bower_components/foundation/js/foundation.js', '_scripts/app.js'],
+        dest: 'scripts/app.js'
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -24,8 +42,10 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'coffee', 'concat']);
   grunt.registerTask('default', ['build','watch']);
 }
