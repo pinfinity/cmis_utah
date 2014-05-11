@@ -1,0 +1,6 @@
+{
+  "name": "cmis_utah",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}
