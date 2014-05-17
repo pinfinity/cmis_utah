@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     coffee: {
       dist: {
         options: {},
-        src: '_scripts/*.coffee',
+        src: '_scripts/**/*.coffee',
         dest: '_scripts/app.js'
       }
     },
@@ -37,6 +37,11 @@ module.exports = function(grunt) {
       sass: {
         files: '_stylesheets/**/*.scss',
         tasks: ['sass']
+      },
+
+      coffee: {
+        files: '_scripts/**/*.coffee',
+        tasks: ['coffee', 'concat']
       }
     }
   });
