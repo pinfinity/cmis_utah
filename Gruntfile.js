@@ -31,6 +31,14 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      jquery: {
+        options: {},
+        src: '_bower_components/jquery/dist/jquery.js',
+        dest: 'scripts/jquery.js'
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -49,8 +57,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['sass', 'coffee', 'concat']);
+  grunt.registerTask('build', ['sass', 'coffee', 'concat', 'copy']);
   grunt.registerTask('default', ['build','watch']);
 }
