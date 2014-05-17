@@ -32,10 +32,16 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      jquery: {
+      vendor_js: {
         options: {},
-        src: '_bower_components/jquery/dist/jquery.js',
-        dest: 'scripts/jquery.js'
+        files: [{
+            src: '_bower_components/jquery/dist/jquery.js',
+            dest: 'scripts/jquery.js'
+          },{
+            src: '_bower_components/modernizr/modernizr.js',
+            dest: 'scripts/modernizr.js'
+          }
+        ],
       }
     },
 
