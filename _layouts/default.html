@@ -11,9 +11,56 @@
     <link rel="stylesheet" href="/stylesheets/app.css">
   </head>
   <body>
-    <div>
+    <div class="row">
+    <div class="column small-12">
+
+    <nav class="top-bar row" data-topbar>
+      <ul class="title-area">
+        <li class="name"><h1><a href="/">CMIS Utah</a></h1></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="/"><div>Home</div><div><small>CMIS Home Page</small></div></a></li>
+          <li><a href="#"><div>More Info</div><div><small>Learn all about minimally invasive surgery</small></div></a></li>
+          <li><a href="#"><div>Contact</div><div><small>Contact CMIS about your surgery</small></div></a></li>
+        </ul>
+      </section>
+    </nav>
+
     {{ content }}
-    </div>
+
+    <footer class="row">
+      <div class="column small-4">
+        <p>&copy; Name of Copyright Holder</p>
+        <ul class="vcard">
+          <li class="fn">Center for Minimally Invasive Surgery in Utah</li>
+          <li class="street-address">123 Colonial Ave.</li>
+          <li class="locality">Caprica City</li>
+          <li><span class="state">Utah</span>, <span class="zip">12345</span></li>
+        </ul>
+      </div>
+      <div class="column small-4">
+        <h4>Site Map</h4>
+        <ul>
+          <li>Link to page A</li>
+          <li>Link to Another Page</li>
+          <li>Very interesting article</li>
+          <li>Link to a video</li>
+        </ul>
+      </div>
+      <div class="column small-4">
+        <h4>Contact Us</h4>
+        <dl>
+          <dt>Email:</dt>
+          <dd>info@example.com</dd>
+          <dt>Phone:</dt>
+          <dd>888.888.8888</dd>
+        </dl>
+      </div>
+    </footer>
+
+    </div></div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/scripts/jquery.js"><\/script>')</script>
