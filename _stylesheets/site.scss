@@ -21,6 +21,9 @@
   }
 }
 
+.row .row.site-footer {
+  margin-top: rem-calc(36);
+}
 .site-footer {
   background: #333;
   color: white;
@@ -31,4 +34,41 @@
   .column {
     margin-top: 1em;
   }
+}
+
+.row .row.cover-hero {
+  margin-top: rem-calc(16);
+}
+.cover-hero {
+  background: transparent url(/images/big_sky.jpg) no-repeat center center;
+  min-height: rem-calc(300);
+}
+
+.row .row.page-header {
+  margin-top: rem-calc(24);
+}
+
+.row .row.benefits {
+  margin-top: rem-calc(36);
+}
+.benefits {
+  .benefits__item {
+    margin-top: rem-calc(24);
+  }
+}
+
+.benefit-item {
+  .benefit-item__icon {
+    background: #333;
+    color: white;
+    height: 100px;
+  }
+  h3 {
+    line-height: 1;
+    margin: 0;
+  }
+}
+
+.row .row.inline-cta {
+  margin-top: rem-calc(24);
 }
