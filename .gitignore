@@ -23,7 +23,6 @@ node_modules/**
 _bower_components
 
 # Build dest directories
-stylesheets
 _site
-scripts
 _scripts/app.js
+
