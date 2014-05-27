@@ -1,14 +1,11 @@
-.top-bar {
-  .title-area h1 a {
-    font-size: 2em;
+.site-footer {
+  background: #333;
+  color: white;
+
+  h4 {
+    color: white;
   }
-  a div {
-    font-size: 1.4em;
+  .column {
+    margin-top: 1em;
   }
-  a small {
-    font-size: 0.7em;
-  }
-}
-.top-bar-section ul li {
-  max-width: 12em;
 }
