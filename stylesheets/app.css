@@ -4766,7 +4766,7 @@ th.hide-for-touch {
   margin-top: 1rem; }
 
 .cover-hero {
-  background: transparent url(/cmis_utah/images/big_sky.jpg) no-repeat center center;
+  background: transparent url(../images/big_sky.jpg) no-repeat center center;
   min-height: 18.75rem; }
 
 .row .row.page-header {
